@@ -26,11 +26,12 @@
             </intent-filter>
         </activity>
 
-        <!-- Declarar la actividad PantallaLogin -->
+        <!-- Declarar la actividad PantallaLogin
         <activity android:name="@style/Theme.MarcosGBParcial22.vista.PantallaLogin" />
 
-        <!-- Declarar la actividad PantallaRegistro -->
+         Declarar la actividad PantallaRegistro
         <activity android:name="@style/Theme.MarcosGBParcial22.vista.PantallaRegistro" />
+         -->
 
     </application>
 
