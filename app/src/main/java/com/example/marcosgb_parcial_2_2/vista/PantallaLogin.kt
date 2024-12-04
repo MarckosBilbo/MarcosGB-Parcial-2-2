@@ -1,5 +1,6 @@
 package com.example.marcosgb_parcial_2_2.vista
 
+import android.content.Context
 import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -9,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.marcosgb_parcial_2_2.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 
 @Composable
@@ -31,14 +33,14 @@ fun PantallaLogin(navController: NavController, auth: FirebaseAuth) {
         TextField(
             value = email,
             onValueChange = { email = it },
-            label = { Text("Email") },
+            label = { Text("Correo") },
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
         TextField(
             value = password,
             onValueChange = { password = it },
-            label = { Text("Password") },
+            label = { Text("Contrasenia") },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth()
         )
@@ -66,6 +68,14 @@ fun PantallaLogin(navController: NavController, auth: FirebaseAuth) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Registrarse")
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+        LanguageSelector { language ->
+            // Save the selected language and apply it
+            navController.context.getSharedPreferences("app_preferences", Context.MODE_PRIVATE)
+                .edit().putString("language", language).apply()
+            // Restart the activity to apply the new language
+            (navController.context as MainActivity).recreate()
         }
     }
 }

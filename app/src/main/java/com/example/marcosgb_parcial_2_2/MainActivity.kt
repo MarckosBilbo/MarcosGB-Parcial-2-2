@@ -53,13 +53,6 @@ class MainActivity : ComponentActivity() {
                         PantallaRegistroEvento(navController, VistaModeloEvento(application))
                     }
                 }
-
-                // Añadir el selector de idioma
-                LanguageSelector { language ->
-                    sharedPreferences.edit().putString("language", language).apply()
-                    configureLanguage(language)
-                    recreate() // Reiniciar la actividad para aplicar el nuevo idioma
-                }
             }
         }
     }
