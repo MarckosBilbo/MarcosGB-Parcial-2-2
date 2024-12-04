@@ -1,0 +1,60 @@
+@startuml
+package "com.example.marcosgb_parcial_2_2.modelo" {
+    class Evento {
+        - String id
+        - String nombre
+        - String descripcion
+        - String direccion
+        - double precio
+        - String fecha
+        - int aforo
+        + Evento()
+        + Evento(String, String, String, double, String, int)
+        + getId(): String
+        + setId(String): void
+        + getNombre(): String
+        + setNombre(String): void
+        + ...
+    }
+
+    class RepositorioEvento {
+        - DatabaseReference databaseReference
+        - MutableLiveData<List<Evento>> eventos
+        + RepositorioEvento(Application)
+        + fetchEventos(): void
+        + agregarEvento(Evento): void
+        + eliminarEvento(Evento): void
+        + obtenerEventos(): LiveData<List<Evento>>
+    }
+
+    class VistaModeloEvento {
+        - RepositorioEvento repositorio
+        + VistaModeloEvento(Application)
+        + obtenerEventos(): LiveData<List<Evento>>
+        + agregarEvento(Evento): void
+        + eliminarEvento(Evento): void
+    }
+}
+
+package "com.example.marcosgb_parcial_2_2.vista" {
+    class PantallaLogin
+    class PantallaRegistro
+    class PantallaPrincipal
+    class PantallaRegistroEvento
+}
+
+package "com.example.marcosgb_parcial_2_2.service" {
+    class ConnectivityWorker {
+        + doWork(): Result
+    }
+}
+
+RepositorioEvento --> Evento
+VistaModeloEvento --> RepositorioEvento
+PantallaPrincipal --> VistaModeloEvento
+PantallaRegistroEvento --> VistaModeloEvento
+ConnectivityWorker --> RepositorioEvento
+PantallaRegistro --> PantallaLogin
+PantallaLogin --> PantallaRegistro
+PantallaLogin --> PantallaPrincipal
+@enduml

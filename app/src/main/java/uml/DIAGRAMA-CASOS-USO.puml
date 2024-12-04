@@ -1,0 +1,18 @@
+@startuml
+actor Usuario
+
+usecase "Registro de Usuario" as UC1
+usecase "Inicio de Sesión" as UC2
+usecase "Agregar Evento" as UC3
+usecase "Ver Lista de Eventos" as UC4
+usecase "Sincronización de Datos" as UC5
+usecase "Cerrar Sesión" as UC6
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+Usuario --> UC6
+
+UC5 ..> UC4 : Extiende
+@enduml
