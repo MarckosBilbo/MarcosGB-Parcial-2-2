@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">MarcosGB-Parcial-2-2</string>
+    <string name="app_name">Gestión de Eventos</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrar</string>
+    <string name="main_title">Eventos</string>
+    <string name="add_event">Añadir Evento</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="event_details">Detalles del Evento</string>
+    <string name="name">Nombre</string>
+    <string name="description">Descripción</string>
+    <string name="address">Dirección</string>
+    <string name="price">Precio</string>
+    <string name="date">Fecha</string>
+    <string name="capacity">Aforo</string>
+    <string name="close">Cerrar</string>
+    <string name="delete">Eliminar</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="registration_successful">Registro Exitoso</string>
+    <string name="registration_failed">Registro Fallido</string>
+    <string name="back_to_login">Volver a Iniciar Sesión</string>
+    <string name="date_format">Fecha (YYYY-MM-DD)</string>
+    <string name="invalid_price">Precio Inválido</string>
+    <string name="invalid_capacity">Aforo Inválido</string>
+    <string name="error_creating_event">Error al crear el evento: %1$s</string>
+    <string name="save">Guardar</string>
+    <string name="back_to_main">Volver a Principal</string>
 </resources>

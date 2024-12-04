@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Event Management</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="main_title">Events</string>
+    <string name="add_event">Add Event</string>
+    <string name="logout">Log Out</string>
+    <string name="event_details">Event Details</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="address">Address</string>
+    <string name="price">Price</string>
+    <string name="date">Date</string>
+    <string name="capacity">Capacity</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="registration_successful">Registration Successful</string>
+    <string name="registration_failed">Registration Failed</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="date_format">Date (YYYY-MM-DD)</string>
+    <string name="invalid_price">Invalid Price</string>
+    <string name="invalid_capacity">Invalid Capacity</string>
+    <string name="error_creating_event">Error creating event: %1$s</string>
+    <string name="save">Save</string>
+    <string name="back_to_main">Back to Main</string>
+</resources>
