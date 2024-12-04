@@ -3,6 +3,10 @@
 
 REPOSITORIO--> https://github.com/Parcial-Eventos-2/MarcosGB-Parcial-2-2
 
+REPOSITORIO--> https://github.com/Parcial-Eventos-2/MarcosGB-Parciall-2-1
+
+REPOSITORIO-->https://github.com/Parcial-Eventos-2/MarcosGB-Parcial-2-3
+
 # Aplicación de Gestión de Eventos
 
 Esta es una aplicación de gestión de eventos construida con Kotlin y Jetpack Compose. La aplicación permite a los usuarios registrarse, iniciar sesión y gestionar eventos. Utiliza Firebase para la autenticación y la base de datos en tiempo real.
