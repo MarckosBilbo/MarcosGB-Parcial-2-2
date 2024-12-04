@@ -2,7 +2,7 @@
 
 VIDEO-->
 
-REPOSITORIO-->
+REPOSITORIO--> https://github.com/Parcial-Eventos-2/MarcosGB-Parcial-2-2
 
 # Aplicación de Gestión de Eventos
 
