@@ -1,6 +1,5 @@
 # MarcosGB-Parcial-2-2
 
-VIDEO-->
 
 REPOSITORIO--> https://github.com/Parcial-Eventos-2/MarcosGB-Parcial-2-2
 
